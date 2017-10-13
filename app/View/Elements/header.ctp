@@ -8,15 +8,17 @@
           <span class="logo-text__des">Салон сантехники</span>
         </div>            
       </a>
-      <a href="/basket" class="korzina">
-        <span class="korzina__heading">Корзина</span>
-        <span id="korzina_content" class="korzina__text <?= ($this->request->params['controller'] == 'baskets') ? 'korz' : '' ?>">0 товаров</span>
-      </a>
-      <div class="phone-number">
-        <span>+7 (7172) 49-91-99</span>
-        <span>+7 (776) 127-47-05</span>
-        <span>+7 (7172) 59-98-88</span>               
-      </div>
+      <div class="h-right">
+	      <div class="phone-number">
+	         <span>+7 (7172) 49-91-99</span>
+	         <span>+7 (776) 127-47-05</span>
+	         <span>+7 (7172) 59-98-88</span>               
+	      </div>
+	      <a href="/basket" class="korzina">
+        	<span class="korzina__heading">Корзина</span>
+        	<span id="korzina_content" class="korzina__text <?= ($this->request->params['controller'] == 'baskets') ? 'korz' : '' ?>">0 товаров</span>
+      	  </a>
+      </div>            
       <div class="work-time">
         <span>Работаем с 10:00</span>
         <span>до 20:00 без выходных</span>

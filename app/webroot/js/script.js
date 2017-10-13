@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
     var nav = document.querySelector('.menu');
     var mob =  document.createElement('DIV');
     nav.appendChild(mob);
@@ -7,10 +6,18 @@ $(document).ready(function(){
     $('.mob_start').on('click', function () {
         if($('.menu').hasClass('mob_active')){
             $('.menu').removeClass('mob_active');
+            $('.nav__li').removeClass('li-mob');  
+            $('.nav__li--production').removeClass('li-production');
+            $('.frame').removeClass('frame-mob');
         }else{
             $('.menu').addClass('mob_active');
         }                           
-    }); 
+    });
+    $('.nav__li--production').on('click', function () {
+      $('.nav__li').addClass('li-mob');  
+      $('.nav__li--production').addClass('li-production');
+      $('.frame').addClass('frame-mob');
+    });
     $('.catalog-show').on('click', function () {
         if($('.left-category').hasClass('left-category--active')){
             $('.left-category').removeClass('left-category--active');
@@ -18,29 +25,64 @@ $(document).ready(function(){
             $('.left-category').addClass('left-category--active');
         }                           
     });
-  //   $('.slider').slick({
-  //       autoplay: true,
-  //       speed: 1200,
-  //       slidesToShow: 1
-  //   });
-  //   $('.client-carousel').slick({
-  //       autoplay: true,
-  //       speed: 1200,
-  //       slidesToShow: 4,
-  //       slidesToScroll: 1,
-  //       easing: 'easeInOutBack',
-  //           responsive: [
-  //       {
-  //     breakpoint: 990,
-  //     settings: {
-  //       slidesToShow: 3,
-  //       slidesToScroll: 1,
-  //       infinite: true,
-  //       arrows:false,
-  //     }
-  //   }
-  // ]       
-  //           });                
+    $('.slider').slick({
+        autoplay: true,
+        speed: 1200,
+        slidesToShow: 1
+    });
+    $('.cat-ul').slick({
+        autoplay: true,
+        speed: 1200,
+        slidesToShow: 8,
+        responsive: [
+            {
+              breakpoint: 990,
+              settings: {
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                infinite: true,
+                arrows:true,
+              }
+            },
+            {
+              breakpoint: 800,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                infinite: true,
+                arrows:true,
+              }
+            },
+            {
+              breakpoint: 500,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                arrows:true,
+              }
+            }
+        ] 
+    });
+    $('.client-carousel').slick({
+        autoplay: true,
+        speed: 1200,
+        arrows:false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        easing: 'easeInOutBack',
+        responsive: [
+            {
+              breakpoint: 990,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                arrows:false,
+              }
+            }
+        ]       
+    });                
    $('.product-des').lightTabs(); 
 });   
   (function($){  
@@ -76,7 +118,6 @@ $(document).ready(function(){
     /*begin korzina*/
 $(document).ready(function(){
 
- 
         
       $('.add').on('click', function (){
              var vprodBot = $('.prod-bot__numbers');
@@ -127,51 +168,6 @@ $(document).ready(function(){
             localStorage.setItem('cart', JSON.stringify(o));
             return false;
         }
-
-           if($('*').is('#senddata')){
-      console.log('est');
-
-$("#basketform").submit(function(){
-
-if(cartData){
-  // вытаскиваем все данные корзины
-        var totalItems = '';
-        var m = 0;                
-        // если что-то в корзине уже есть, начинаем формировать данные для вывода        
-        totalItems = '<table cellspacing="0" class="shopping_list"><tr><th>№</th> <th>Наименование</th><th>Цена</th><th>Кол-во</th><th>Сумма</th> </tr>';            
-            for(var items in cartData){
-                totalItems += '<tr>';                                                
-                m = m + 1;                                                             
-                totalItems += '<td>' + m + '</td>';                                      
-                totalItems += '<td>' + cartData[items][0] + '</td>';
-                totalItems += '<td>' + cartData[items][1] + ' KZT'  + '</td>'; 
-                totalItems += '<td>' + cartData[items][2] + '</td>';                                                 
-                totalItems += '<td>' + cartData[items][3] + ' KZT' + '</td>';
-                totalItems += '</tr>';                                 
-            }
-            totalItems += '<tr>' + '<td>' + 'Итого: '  + gSumma + ' KZT' + '</td>' + '</tr>';
-            totalItems += '<table>';
-            $("#senddata").val(totalItems);
-            // console.log($("#senddata").val());
-            $("#basketform").submit();
-}else{
-  alert('К сожалению корзина пустая!')
-}
-
-  return false;
-});
-
-
-      // $('#senddata').on('click', function(){
-      //   event.preventDefault();
-      // })
-
-    }else{
-      console.log('net');
-    }
-    function ttt(){
-      alert('test');
-    }
         // function showBot(){
 
         // }

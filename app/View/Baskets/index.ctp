@@ -80,7 +80,7 @@
 		<div class="zakas-line">
 			<div class="zakas-row">
 				<label class="zakas-row__label">Контактный телефон:</label>
-				<input class="zakas-row__input" placeholder="онтактный телефон" type="text">
+				<input class="zakas-row__input" placeholder="Контактный телефон" type="text">
 			</div>
 			<div class="zakas-row">
 				<label class="zakas-row__label">Почта:</label>

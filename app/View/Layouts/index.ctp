@@ -34,56 +34,56 @@
             <?=$this->element('header') ?>
             <div class="category-lines">
                 <div class="inner">
-                    <ul class="cat-ul">
-                        <li>
+                    <div class="cat-ul">
+                        <div>
                             <a class="cat-m" href="/category/dushevye-kabiny">
                                 <span class="cat-m__img"></span>
                                 <span class="cat-m__heading">Душевые кабины</span>
                             </a>
-                        </li>
-                        <li>
+                        </div>
+                        <div>
                             <a class="cat-m" href="/category/mebel-dlya-vannoy-komnaty">
                                 <span class="cat-m__img cat-m__img--mvanna"></span>
                                 <span class="cat-m__heading">Мебель для ванной</span>
                             </a>
-                        </li>
-                        <li>
+                        </div>
+                        <div>
                             <a class="cat-m" href="/cats/smesiteli">
                                 <span class="cat-m__img cat-m__img--smestiteli"></span>
                                 <span class="cat-m__heading">Смесители</span>
                             </a>
-                        </li>
-                        <li>
+                        </div>
+                        <div>
                             <a class="cat-m" href="/category/vanny">
                                 <span class="cat-m__img cat-m__img--vanna"></span>
                                 <span class="cat-m__heading">Ванны</span>
                             </a>
-                        </li>
-                        <li>
+                        </div>
+                        <div>
                             <a class="cat-m" href="/category/kafel">
                                 <span class="cat-m__img cat-m__img--kafell"></span>
                                 <span class="cat-m__heading">Кафель</span>
                             </a>
-                        </li>
-                        <li>
+                        </div>
+                        <div>
                             <a class="cat-m" href="/category/sanfayans">
                                 <span class="cat-m__img cat-m__img--sanfayas"></span>
                                 <span class="cat-m__heading">Санфаянс</span>
                             </a>
-                        </li>
-                        <li>
+                        </div>
+                        <div>
                             <a class="cat-m" href="/category/polotencesushiteli">
                                 <span class="cat-m__img cat-m__img--psushiteli"></span>
                                 <span class="cat-m__heading">Полотенцесушители</span>
                             </a>
-                        </li>
-                        <li>
+                        </div>
+                        <div>
                             <a class="cat-m" href="/category/aksessuary">
                                 <span class="cat-m__img cat-m__img--accsessory"></span>
                                 <span class="cat-m__heading">Аксессуары</span>
                             </a>
-                        </li>                                                                                                                                               
-                    </ul>
+                        </div>                                                                                                                                               
+                    </div>
                 </div>
             </div>
             <div class="inner ov main-part">
@@ -257,7 +257,7 @@
             </div>          
         </footer>
         <script type="text/javascript" src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
-        <script type="text/javascript" src="js/script.js"></script>
         <script type="text/javascript" src="js/slick.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>    
     </body>
 </html>
