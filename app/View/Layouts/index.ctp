@@ -92,23 +92,17 @@
                         <div class="slider-info">
                             <span class="slider-info__heading">Скидки на смесители</span>
                             <span class="skidka">10%</span>
-                            <img src="/img/slider-smestitel.png">
+                            <img src="/img/slider10.png">
                         </div>
                     </div>
                     <div>
                         <div class="slider-info">
-                            <span class="slider-info__heading">Скидки на смесители</span>
-                            <span class="skidka">10%</span>
-                            <img src="/img/slider-smestitel.png">
+                            <span class="slider-info__heading">Скидки на все аксессуары<</span>
+                            <span class="skidka">до 30%</span>
+                            <img src="/img/slider11.png">
                         </div>
                     </div>
-                    <div>
-                        <div class="slider-info">
-                            <span class="slider-info__heading">Скидки на смесители</span>
-                            <span class="skidka">10%</span>
-                            <img src="/img/slider-smestitel.png">
-                        </div>
-                    </div>                                                      
+                                                                        
                 </div>
                 <div class="right-part">
                     <div class="hit-part">
@@ -184,18 +178,12 @@
                 Наши клиенты
             </span>
             <div class="client-carousel">
+            <?php foreach($clients as $item): ?>
                 <div class="client-carousel__item">
-                    <img alt="Клиент" src="img/client.png">
+                   <img alt="Клиент" src="/img/client/<?=$item['Client']['img']?>">
                 </div>
-                <div class="client-carousel__item">
-                    <img alt="Клиент" src="img/client.png">
-                </div>
-                <div class="client-carousel__item">
-                    <img alt="Клиент" src="img/client.png">
-                </div>
-                <div class="client-carousel__item">
-                    <img alt="Клиент" src="img/client.png">
-                </div>
+            <?php endforeach ?>
+                
             </div>
           </div>
       </div>

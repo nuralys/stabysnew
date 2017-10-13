@@ -24,8 +24,10 @@
         <span>до 20:00 без выходных</span>
       </div>
       <div class="search">
-        <input class="search__input" type="search" placeholder="Поиск по каталогу">
+      <form action="/products/search">
+        <input class="search__input" type="search" placeholder="Поиск по каталогу" name="q">
         <input class="search__submit" type="submit">
+        </form>
       </div>            
       <ul class="social">
         <li class="social__item">               
