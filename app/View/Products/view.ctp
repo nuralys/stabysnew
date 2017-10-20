@@ -16,6 +16,17 @@
 <div class="product">
   <div class="product__img">
     <img alt="<?=$data['Product']['title']?>" src="/img/product/<?=$data['Product']['img']?>">
+    <div class="product-zakas">                             
+      <p class="product-zakas__price"><span>12000</span> KZT</p>
+      <div class="product-zakas__center">
+        <div class="center-add">
+          <span class="add add--minus">-</span>
+          <input type="text" class="kolvo" value="1">
+          <span class="add add--plus">+</span>
+        </div>
+      </div>
+      <button data-id="1" class="product-zakas__add">Добавить в корзину</button>  
+    </div>
   </div>
   <div class="product__right">
     <div class="product-des">

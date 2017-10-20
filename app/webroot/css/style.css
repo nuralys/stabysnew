@@ -6003,10 +6003,21 @@ p {
   overflow: hidden;
   margin-left: 25px;
   margin-right: -25px;
+  font-size: 0;
 }
 .catalog-list__item {
   width: 33.33%;
-  float: left;
+  display: inline-block;
+  vertical-align: top;
+}
+.up-categories {
+  background-color: #fff;
+  display: inline-block;
+  margin-left: 27px;
+  margin-bottom: 25px;
+}
+.up-categories__but {
+  margin-right: 15px;
 }
 .product-mini {
   background-color: #ffffff;
@@ -6020,7 +6031,6 @@ p {
 .product-mini__img {
   display: block;
   margin: 0 auto;
-  padding-top: 50px;
   max-width: 100%;
 }
 .add {
@@ -6045,6 +6055,8 @@ p {
   padding: 20px;
   position: absolute;
   top: 0px;
+  left: 0;
+  right: 0;
   bottom: 34px;
   z-index: 2;
 }
